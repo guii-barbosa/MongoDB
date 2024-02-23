@@ -29,7 +29,3 @@ def buscar_alunos_media_entre_sete_e_nove():
 # Consulta para contar o número total de alunos
 def contar_total_alunos():
     return collectionAlunos.count_documents({})
-
-# Fechar a conexão com o MongoDB
-def fechar_conexao():
-    conexao.close()
