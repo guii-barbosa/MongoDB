@@ -1,7 +1,8 @@
 from pymongo import MongoClient
+import os
 
 #conexão com o mongo
-conexao = MongoClient(host="mongodb://localhost:27017")
+conexao = MongoClient(host=os.getenv("HOST"))
 
 #criar um banco de dados
 dbConexao = conexao["dbConexao"]
