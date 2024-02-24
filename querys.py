@@ -15,8 +15,8 @@ def buscar_alunos_maiores_de_idade():
     return collectionAlunos.find({"idade": {"$gt": 18}})
 
 # Consulta para encontrar alunos com média menor que 6
-def buscar_alunos_media_menor_que_seis():
-    return collectionAlunos.find({"media": {"$lt": 6}})
+def buscar_alunos_media_menor_que_sete():
+    return collectionAlunos.find({"media": {"$lt": 7}})
 
 # Consulta para encontrar um aluno pelo nome
 def buscar_aluno_por_nome(nome):
